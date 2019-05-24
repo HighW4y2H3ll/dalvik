@@ -30,17 +30,18 @@
 #include <assert.h>
 #include "cutils/log.h"
 
-#if defined(HAVE_ENDIAN_H)
-# include <endian.h>
-#else /*not HAVE_ENDIAN_H*/
-# define __BIG_ENDIAN 4321
-# define __LITTLE_ENDIAN 1234
-# if defined(HAVE_LITTLE_ENDIAN)
-#  define __BYTE_ORDER __LITTLE_ENDIAN
-# else
-#  define __BYTE_ORDER __BIG_ENDIAN
-# endif
-#endif /*not HAVE_ENDIAN_H*/
+#include <endian.h>
+//#if defined(HAVE_ENDIAN_H)
+//# include <endian.h>
+//#else /*not HAVE_ENDIAN_H*/
+//# define __BIG_ENDIAN 4321
+//# define __LITTLE_ENDIAN 1234
+//# if defined(HAVE_LITTLE_ENDIAN)
+//#  define __BYTE_ORDER __LITTLE_ENDIAN
+//# else
+//#  define __BYTE_ORDER __BIG_ENDIAN
+//# endif
+//#endif /*not HAVE_ENDIAN_H*/
 
 #if !defined(NDEBUG) && defined(WITH_DALVIK_ASSERT)
 # undef assert
