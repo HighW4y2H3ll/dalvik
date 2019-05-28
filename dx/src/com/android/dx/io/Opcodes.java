@@ -103,6 +103,9 @@ public final class Opcodes {
     public static final int IF_GEZ = 0x3b;
     public static final int IF_GTZ = 0x3c;
     public static final int IF_LEZ = 0x3d;
+    public static final int CONST_UINT = 0x3e;
+    public static final int CONST_WIDE_SLONG = 0x3f;
+    public static final int CONST_WIDE_ULONG = 0x40;
     public static final int AGET = 0x44;
     public static final int AGET_WIDE = 0x45;
     public static final int AGET_OBJECT = 0x46;

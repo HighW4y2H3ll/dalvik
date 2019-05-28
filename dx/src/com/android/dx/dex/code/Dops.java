@@ -149,7 +149,7 @@ public final class Dops {
 
     public static final Dop CONST_HIGH16 =
         new Dop(Opcodes.CONST_HIGH16, Opcodes.CONST,
-            Opcodes.CONST, Form21h.THE_ONE, true);
+            Opcodes.CONST_UINT, Form21h.THE_ONE, true);
 
     public static final Dop CONST_WIDE_16 =
         new Dop(Opcodes.CONST_WIDE_16, Opcodes.CONST_WIDE,
@@ -157,7 +157,7 @@ public final class Dops {
 
     public static final Dop CONST_WIDE_32 =
         new Dop(Opcodes.CONST_WIDE_32, Opcodes.CONST_WIDE,
-            Opcodes.CONST_WIDE, Form31i.THE_ONE, true);
+            Opcodes.CONST_WIDE_ULONG, Form31i.THE_ONE, true);
 
     public static final Dop CONST_WIDE =
         new Dop(Opcodes.CONST_WIDE, Opcodes.CONST_WIDE,
@@ -310,6 +310,18 @@ public final class Dops {
     public static final Dop IF_LEZ =
         new Dop(Opcodes.IF_LEZ, Opcodes.IF_LEZ,
             Opcodes.NO_NEXT, Form21t.THE_ONE, false);
+
+    public static final Dop CONST_UINT =
+        new Dop(Opcodes.CONST_UINT, Opcodes.CONST,
+            Opcodes.NO_NEXT, Form31i.THE_ONE, true);
+
+    public static final Dop CONST_WIDE_SLONG =
+        new Dop(Opcodes.CONST_WIDE_SLONG, Opcodes.CONST_WIDE,
+            Opcodes.NO_NEXT, Form51l.THE_ONE, true);
+
+    public static final Dop CONST_WIDE_ULONG =
+        new Dop(Opcodes.CONST_WIDE_ULONG, Opcodes.CONST_WIDE,
+            Opcodes.NO_NEXT, Form51l.THE_ONE, true);
 
     public static final Dop AGET =
         new Dop(Opcodes.AGET, Opcodes.AGET,
@@ -1006,6 +1018,9 @@ public final class Dops {
         set(IF_GEZ);
         set(IF_GTZ);
         set(IF_LEZ);
+        set(CONST_UINT);
+        set(CONST_WIDE_SLONG);
+        set(CONST_WIDE_ULONG);
         set(AGET);
         set(AGET_WIDE);
         set(AGET_OBJECT);

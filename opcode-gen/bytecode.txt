@@ -146,6 +146,10 @@ op   3b if-gez                      21t  n none          continue|branch
 op   3c if-gtz                      21t  n none          continue|branch
 op   3d if-lez                      21t  n none          continue|branch
 # unused: op 3e..43
+op   3e const/uint                  31i  y none          continue
+op   3f const-wide/slong            51l  y none          continue
+op   40 const-wide/ulong            51l  y none          continue
+# unused: op 41..43
 op   44 aget                        23x  y none          continue|throw
 op   45 aget-wide                   23x  y none          continue|throw
 op   46 aget-object                 23x  y none          continue|throw

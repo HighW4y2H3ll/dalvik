@@ -69,7 +69,9 @@ public final class RopToDop {
     //     Opcodes.RETURN_WIDE
     //     Opcodes.RETURN_OBJECT
     //     Opcodes.CONST_4
+    //     Opcodes.CONST
     //     Opcodes.CONST_WIDE_16
+    //     Opcodes.CONST_WIDE
     //     Opcodes.CONST_STRING
     //     Opcodes.CONST_CLASS
     //     Opcodes.MONITOR_ENTER
@@ -102,6 +104,7 @@ public final class RopToDop {
     //     Opcodes.IF_GEZ
     //     Opcodes.IF_GTZ
     //     Opcodes.IF_LEZ
+    //     Opcodes.CONST_WIDE_SLONG
     //     Opcodes.AGET
     //     Opcodes.AGET_WIDE
     //     Opcodes.AGET_OBJECT

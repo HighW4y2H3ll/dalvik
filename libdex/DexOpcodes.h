@@ -130,9 +130,9 @@ enum Opcode {
     OP_IF_GEZ                       = 0x3b,
     OP_IF_GTZ                       = 0x3c,
     OP_IF_LEZ                       = 0x3d,
-    OP_UNUSED_3E                    = 0x3e,
-    OP_UNUSED_3F                    = 0x3f,
-    OP_UNUSED_40                    = 0x40,
+    OP_CONST_UINT                   = 0x3e,
+    OP_CONST_WIDE_SLONG             = 0x3f,
+    OP_CONST_WIDE_ULONG             = 0x40,
     OP_UNUSED_41                    = 0x41,
     OP_UNUSED_42                    = 0x42,
     OP_UNUSED_43                    = 0x43,
@@ -396,9 +396,9 @@ enum Opcode {
         H(OP_IF_GEZ),                                                         \
         H(OP_IF_GTZ),                                                         \
         H(OP_IF_LEZ),                                                         \
-        H(OP_UNUSED_3E),                                                      \
-        H(OP_UNUSED_3F),                                                      \
-        H(OP_UNUSED_40),                                                      \
+        H(OP_CONST_UINT),                                                     \
+        H(OP_CONST_WIDE_SLONG),                                               \
+        H(OP_CONST_WIDE_ULONG),                                               \
         H(OP_UNUSED_41),                                                      \
         H(OP_UNUSED_42),                                                      \
         H(OP_UNUSED_43),                                                      \

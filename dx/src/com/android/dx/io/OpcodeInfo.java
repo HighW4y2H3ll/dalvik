@@ -307,6 +307,18 @@ public final class OpcodeInfo {
         new Info(Opcodes.IF_LEZ, "if-lez",
             InstructionCodec.FORMAT_21T, IndexType.NONE);
 
+    public static final Info CONST_UINT =
+        new Info(Opcodes.CONST_UINT, "const/uint",
+            InstructionCodec.FORMAT_31I, IndexType.NONE);
+
+    public static final Info CONST_WIDE_SLONG =
+        new Info(Opcodes.CONST_WIDE_SLONG, "const-wide/slong",
+            InstructionCodec.FORMAT_51L, IndexType.NONE);
+
+    public static final Info CONST_WIDE_ULONG =
+        new Info(Opcodes.CONST_WIDE_ULONG, "const-wide/ulong",
+            InstructionCodec.FORMAT_51L, IndexType.NONE);
+
     public static final Info AGET =
         new Info(Opcodes.AGET, "aget",
             InstructionCodec.FORMAT_23X, IndexType.NONE);
@@ -1008,6 +1020,9 @@ public final class OpcodeInfo {
         set(IF_GEZ);
         set(IF_GTZ);
         set(IF_LEZ);
+        set(CONST_UINT);
+        set(CONST_WIDE_SLONG);
+        set(CONST_WIDE_ULONG);
         set(AGET);
         set(AGET_WIDE);
         set(AGET_OBJECT);
