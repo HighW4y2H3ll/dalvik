@@ -133,7 +133,7 @@ enum Opcode {
     OP_CONST_UINT                   = 0x3e,
     OP_CONST_WIDE_SLONG             = 0x3f,
     OP_CONST_WIDE_ULONG             = 0x40,
-    OP_UNUSED_41                    = 0x41,
+    OP_LOG_LEVEL                    = 0x41,
     OP_UNUSED_42                    = 0x42,
     OP_UNUSED_43                    = 0x43,
     OP_AGET                         = 0x44,
@@ -399,7 +399,7 @@ enum Opcode {
         H(OP_CONST_UINT),                                                     \
         H(OP_CONST_WIDE_SLONG),                                               \
         H(OP_CONST_WIDE_ULONG),                                               \
-        H(OP_UNUSED_41),                                                      \
+        H(OP_LOG_LEVEL),                                                      \
         H(OP_UNUSED_42),                                                      \
         H(OP_UNUSED_43),                                                      \
         H(OP_AGET),                                                           \

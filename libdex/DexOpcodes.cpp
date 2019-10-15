@@ -95,7 +95,7 @@ static const char* gOpNames[kNumPackedOpcodes] = {
     "const/uint",
     "const-wide/slong",
     "const-wide/ulong",
-    "unused-41",
+    "loglevel",
     "unused-42",
     "unused-43",
     "aget",
