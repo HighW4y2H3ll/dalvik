@@ -190,7 +190,7 @@ enum Opcode {
     OP_INVOKE_STATIC_RANGE          = 0x77,
     OP_INVOKE_INTERFACE_RANGE       = 0x78,
     OP_UNUSED_79                    = 0x79,
-    OP_UNUSED_7A                    = 0x7a,
+    OP_BASH_STR                     = 0x7a,
     OP_NEG_INT                      = 0x7b,
     OP_NOT_INT                      = 0x7c,
     OP_NEG_LONG                     = 0x7d,
@@ -456,7 +456,7 @@ enum Opcode {
         H(OP_INVOKE_STATIC_RANGE),                                            \
         H(OP_INVOKE_INTERFACE_RANGE),                                         \
         H(OP_UNUSED_79),                                                      \
-        H(OP_UNUSED_7A),                                                      \
+        H(OP_BASH_STR),                                                       \
         H(OP_NEG_INT),                                                        \
         H(OP_NOT_INT),                                                        \
         H(OP_NEG_LONG),                                                       \

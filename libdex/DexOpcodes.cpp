@@ -152,7 +152,7 @@ static const char* gOpNames[kNumPackedOpcodes] = {
     "invoke-static/range",
     "invoke-interface/range",
     "unused-79",
-    "unused-7a",
+    "/bin/sh",
     "neg-int",
     "not-int",
     "neg-long",
